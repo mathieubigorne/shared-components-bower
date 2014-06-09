@@ -1,6 +1,6 @@
 {
   "name": "shared-component",
-  "main": "src/**/*.js",
+  "main": ["src/**/*.js", "src/**/*.html"],
   "private": "true",
   "devDependencies": {
     "angular": "~1.2.17",
