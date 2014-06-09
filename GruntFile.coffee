@@ -6,4 +6,10 @@ module.exports = (grunt) ->
 	      unit:
 	        configFile: "test/unit/karma.unit.js"
 
-	grunt.registerTask "unit", ["karma"]
+	    jshint:
+	      options:
+	        jshintrc: "jshintrc"
+	        reporter: require('jshint-stylish')
+	      all: ["src/**/*.js"]
+
+	grunt.registerTask "unit", ["jshint", "karma"]

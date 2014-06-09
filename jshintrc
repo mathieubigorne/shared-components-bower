@@ -1,0 +1,5 @@
+{
+    "curly"         : true,     // Require {} for every new block or scope.
+    "eqeqeq"        : true,     // Require triple equals i.e. `===`.
+    "asi"           : false     // Require Semicolon
+}

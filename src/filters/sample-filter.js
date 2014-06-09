@@ -10,5 +10,5 @@ angular.module('xl.filters', [])
                 }
             }
             return output;
-        }
+        };
     }]);
