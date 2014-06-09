@@ -1,4 +1,4 @@
-angular.module('xl.filters', [])
+angular.module('xl.samples', [])
     .filter('shuffleCase', [function () {
         return function (inputText) {
             var output = "";
