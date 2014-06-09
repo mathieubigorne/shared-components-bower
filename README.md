@@ -8,7 +8,7 @@ Add xl-shared-components in your bower.json configuration file, in the dependenc
 
 `"shared-component": "mathieubigorne/shared-components-bower#version"`
 
-Load the scripts files you are insterested in.
+Load the scripts files you are interested in.
 
 ```html
 <script type="text/javascript" src="path/to/component/sample.js"></script>
@@ -23,7 +23,7 @@ var app = angular.module('app', ['xl.samples'])
 If you are using shared directives relying on external templates:
 
 1. Load the scripts templates.js. This file will prepopulate the angular $templateCache.
-2. Add the module 'xl.templates' as a dependency yo your application.
+2. Add the module 'xl.templates' as a dependency to your application.
 
 
 # Contribute
