@@ -1,0 +1,5 @@
+{
+  "name": "shared-component",
+  "main": "main.js",
+  "private": "true"
+}
