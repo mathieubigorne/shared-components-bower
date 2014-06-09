@@ -17,8 +17,8 @@ module.exports = (grunt) ->
         standalone: true
         module: "xl.templates"
       app:
-        cwd: "src"
-        src: "*.html"
+        cwd: "templates"
+        src: "**/*.html"
         dest: "src/templates.js"
 
   grunt.registerTask "unit", ["jshint", "karma"]
