@@ -21,4 +21,8 @@ module.exports = (grunt) ->
         src: "**/*.html"
         dest: "src/templates.js"
 
+    release:
+      options:
+        npm: false
+        
   grunt.registerTask "unit", ["jshint", "karma"]

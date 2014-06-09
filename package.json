@@ -1,5 +1,6 @@
 {
   "name": "shared-component-bower",
+  "version": "0.3.8",
   "repository": {
     "type": "git",
     "url": "https://github.com/mathieubigorne/shared-components-bower"
@@ -23,6 +24,7 @@
     "karma-phantomjs-launcher": "~0.1.4",
     "jshint-stylish": "~0.2.0",
     "grunt-contrib-jshint": "~0.10.0",
-    "grunt-angular-templates": "~0.5.5"
+    "grunt-angular-templates": "~0.5.5",
+    "grunt-release": "~0.7.0"
   }
 }
