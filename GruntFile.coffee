@@ -10,7 +10,7 @@ module.exports = (grunt) ->
       options:
         jshintrc: "jshintrc"
         reporter: require('jshint-stylish')
-        all: ["src/**/*.js"]
+      all: ["src/**/*.js"]
 
     ngtemplates:
       options:
@@ -24,5 +24,8 @@ module.exports = (grunt) ->
     release:
       options:
         npm: false
-        
+
   grunt.registerTask "unit", ["jshint", "karma"]
+  grunt.registerTask "publish", ["jshint", "karma", "ngtemplates", "release"]
+  grunt.registerTask "publish:minor", ["jshint", "karma", "ngtemplates", "release:minor"]
+  grunt.registerTask "publish:major", ["jshint", "karma", "ngtemplates", "release:major"]
