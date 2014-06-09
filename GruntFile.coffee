@@ -2,9 +2,21 @@ module.exports = (grunt) ->
   require("load-grunt-tasks")(grunt)
 
   grunt.initConfig
+    connect:
+      server:
+        options:
+          port: 4545
+          base: "."
+
     karma:
       unit:
         configFile: "test/unit/karma.unit.js"
+
+    protractor:
+      options:
+        configFile: "test/e2e/protractor.conf.js"
+        keepAlive: true
+      run: {}
 
     jshint:
       options:
@@ -26,6 +38,9 @@ module.exports = (grunt) ->
         npm: false
 
   grunt.registerTask "unit", ["jshint", "karma"]
-  grunt.registerTask "publish", ["jshint", "karma", "ngtemplates", "release"]
-  grunt.registerTask "publish:minor", ["jshint", "karma", "ngtemplates", "release:minor"]
-  grunt.registerTask "publish:major", ["jshint", "karma", "ngtemplates", "release:major"]
+  grunt.registerTask "e2e", ["jshint", "connect", "protractor"]
+  grunt.registerTask "test", ["unit", "e2e"]
+
+  grunt.registerTask "publish", ["ngtemplates", "test", "release"]
+  grunt.registerTask "publish:minor", ["ngtemplates", "test", "release:minor"]
+  grunt.registerTask "publish:major", ["ngtemplates", "test", "release:major"]

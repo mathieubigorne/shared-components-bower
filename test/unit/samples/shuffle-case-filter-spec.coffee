@@ -1,4 +1,4 @@
-describe "samples", ->
+describe "shuffle case filter", ->
 
 	beforeEach module "xl.samples"
 

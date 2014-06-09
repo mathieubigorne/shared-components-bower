@@ -1,6 +1,7 @@
 {
   "name": "shared-component",
   "main": ["src/**/*.js", "src/**/*.html"],
+  "ignore": ["test", "templates"],
   "private": "true",
   "devDependencies": {
     "angular": "~1.2.17",
