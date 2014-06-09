@@ -11,4 +11,14 @@ angular.module('xl.samples', [])
             }
             return output;
         };
+    }])
+    .directive('externalLink', [function () {
+        return {
+            template: '<a ng-href="{{ link }}" target="_blank" ng-transclude></a>',
+            restrict: 'A',
+            transclude: true, 
+            scope: {
+                link: '@'
+            }
+        };
     }]);
