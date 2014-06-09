@@ -14,9 +14,9 @@ angular.module('xl.samples', [])
     }])
     .directive('externalLink', [function () {
         return {
-            template: '<a ng-href="{{ link }}" target="_blank" ng-transclude></a>',
+            templateUrl: 'link.html',
             restrict: 'A',
-            transclude: true, 
+            transclude: true,
             scope: {
                 link: '@'
             }
