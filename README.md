@@ -4,7 +4,6 @@ shared-components-bower
 POC using bower to share angular components
 
 # Usage
--------
 Add xl-shared-components in your bower.json configuration file, in the dependencies section:
 
 `"shared-component": "mathieubigorne/shared-components-bower#version"`
@@ -28,7 +27,6 @@ If you are using shared directives relying on external templates:
 
 
 # Contribute
-------------
 ## Setup
 
 1. Install **Grunt** and **Bower**
@@ -41,13 +39,14 @@ If you are using shared directives relying on external templates:
 ## Testing
 
 We use Karma and jshint to ensure the quality of the code.
-Three grunt tasks are available.
+Three tasks are available.
 
-1. `$ grunt unit`.
-2. `$ grunt e2e`.
-3. `$ grunt test` which runs both the unit tests and acceptance tests
+1. `$ grunt unit`
+2. `$ grunt e2e`
+3. `$ grunt test` which runs both the unit tests and acceptance tests.
 
 ## Publishing a new version
+**Make sure to commit before publishing.**
 
 We use the [grunt-release plugin](https://www.npmjs.org/package/grunt-release). The versionning follows the semantic versionning described [here](http://semver.org/).
 
