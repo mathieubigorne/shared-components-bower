@@ -1,5 +1,5 @@
 angular.module('xl.filters', [])
-    .filter('sample', [function () {
+    .filter('shuffleCase', [function () {
         return function (inputText) {
             var output = "";
             for (var i = 0; i < inputText.length; i++) {
@@ -11,4 +11,4 @@ angular.module('xl.filters', [])
             }
             return output;
         }
-    }])
+    }]);
