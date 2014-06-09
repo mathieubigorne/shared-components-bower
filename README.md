@@ -47,6 +47,7 @@ Three tasks are available.
 
 ## Publishing a new version
 **Make sure to commit before publishing.**
+**Complete the CHANGELOG for the new version**
 
 We use the [grunt-release plugin](https://www.npmjs.org/package/grunt-release). The versionning follows the semantic versionning described [here](http://semver.org/).
 
