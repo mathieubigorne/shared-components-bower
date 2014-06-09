@@ -1,15 +1,24 @@
 module.exports = (grunt) ->
-	require("load-grunt-tasks")(grunt)
+  require("load-grunt-tasks")(grunt)
 
-	grunt.initConfig
-	    karma:
-	      unit:
-	        configFile: "test/unit/karma.unit.js"
+  grunt.initConfig
+    karma:
+      unit:
+        configFile: "test/unit/karma.unit.js"
 
-	    jshint:
-	      options:
-	        jshintrc: "jshintrc"
-	        reporter: require('jshint-stylish')
-	      all: ["src/**/*.js"]
+    jshint:
+      options:
+        jshintrc: "jshintrc"
+        reporter: require('jshint-stylish')
+        all: ["src/**/*.js"]
 
-	grunt.registerTask "unit", ["jshint", "karma"]
+    ngtemplates:
+      options:
+        standalone: true
+        module: "xl.templates"
+      app:
+        cwd: "src"
+        src: "*.html"
+        dest: "src/templates.js"
+
+  grunt.registerTask "unit", ["jshint", "karma"]
