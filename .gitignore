@@ -1,3 +1,4 @@
 bower_components
 node_modules
 test/unit/coverage
+.DS_Store

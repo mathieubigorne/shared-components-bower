@@ -1,6 +1,6 @@
 {
   "name": "shared-component",
-  "main": "src/filters/sample-filter.js",
+  "main": "src/**/*.js",
   "private": "true",
   "devDependencies": {
     "angular": "~1.2.17",
