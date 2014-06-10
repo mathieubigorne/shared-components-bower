@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>External Link</title>
+	<script src="../../../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../../../bower_components/angular/angular.js"></script>
+	<script src="../../../src/samples/sample.js"></script>
+	<script src="../../../src/templates.js"></script>
+	<script type="text/javascript">
+		angular.module('wrapperModule', ['xl.samples', 'xl.templates']);
+	</script>
+</head>
+<body ng-app="wrapperModule">
+	<div external-link link="http://www.google.com">Click me</div>
+</body>
+</html>
