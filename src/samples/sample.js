@@ -14,7 +14,7 @@ angular.module('xl.samples', [])
     }])
     .directive('externalLink', [function () {
         return {
-            templateUrl: 'link.html',
+            templateUrl: 'samples/link.html',
             restrict: 'A',
             transclude: true,
             scope: {
