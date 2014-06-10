@@ -1,6 +1,6 @@
 {
   "name": "shared-component",
-  "main": ["src/**/*.js", "src/**/*.html"],
+  "main": ["src/**/*.js"],
   "ignore": ["test", "templates"],
   "private": "true",
   "devDependencies": {
