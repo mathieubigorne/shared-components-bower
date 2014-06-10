@@ -15,7 +15,7 @@ module.exports = (grunt) ->
     protractor:
       options:
         configFile: "test/e2e/protractor.conf.js"
-        keepAlive: true
+        keepAlive: false
       run: {}
 
     jshint:
